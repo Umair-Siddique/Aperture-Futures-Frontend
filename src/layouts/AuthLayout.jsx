@@ -1,3 +1,8 @@
+import chatBg from "../assets/ChatBg.png";
+import logo from "../assets/Logo.png";
+import signinChat from "../assets/SiginChat.png";
+import formBg from "../assets/FormBg.png";
+
 export default function AuthLayout({ children, title, variant }) {
   return (
     <div className="min-h-screen flex relative overflow-hidden">
@@ -20,7 +25,7 @@ export default function AuthLayout({ children, title, variant }) {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/src/assets/ChatBg.png')`,
+              backgroundImage: `url(${chatBg})`,
               opacity: 1
             }}
           />
@@ -40,7 +45,7 @@ export default function AuthLayout({ children, title, variant }) {
               }}
             >
               <img
-                src="/src/assets/Logo.png"
+                src={logo}
                 alt="Aperture Futures Logo"
                 className="w-full h-full object-contain"
               />
@@ -70,7 +75,7 @@ export default function AuthLayout({ children, title, variant }) {
               }}
             >
               <img
-                src="/src/assets/SiginChat.png"
+                src={signinChat}
                 alt="Dashboard Preview"
                 className="w-full h-full object-contain"
               />
@@ -97,7 +102,7 @@ export default function AuthLayout({ children, title, variant }) {
      <div
   className="absolute bg-cover bg-center bg-no-repeat"
   style={{
-    backgroundImage: `url('/src/assets/FormBg.png')`,
+    backgroundImage: `url(${formBg})`,
     width: '1090px',
     height: '581px',
     transform: 'rotate(10deg)',   // Only tilt, no upside-down
