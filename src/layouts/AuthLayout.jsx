@@ -20,7 +20,7 @@ export default function AuthLayout({ children, title, variant }) {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('src/assets/ChatBg.png')`,
+              backgroundImage: `url('/src/assets/ChatBg.png')`,
               opacity: 1
             }}
           />
@@ -40,7 +40,7 @@ export default function AuthLayout({ children, title, variant }) {
               }}
             >
               <img
-                src="src/assets/Logo.png"
+                src="/src/assets/Logo.png"
                 alt="Aperture Futures Logo"
                 className="w-full h-full object-contain"
               />
@@ -70,7 +70,7 @@ export default function AuthLayout({ children, title, variant }) {
               }}
             >
               <img
-                src="src/assets/SiginChat.png"
+                src="/src/assets/SiginChat.png"
                 alt="Dashboard Preview"
                 className="w-full h-full object-contain"
               />
@@ -97,7 +97,7 @@ export default function AuthLayout({ children, title, variant }) {
      <div
   className="absolute bg-cover bg-center bg-no-repeat"
   style={{
-    backgroundImage: `url('src/assets/FormBg.png')`,
+    backgroundImage: `url('/src/assets/FormBg.png')`,
     width: '1090px',
     height: '581px',
     transform: 'rotate(10deg)',   // Only tilt, no upside-down

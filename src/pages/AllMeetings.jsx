@@ -11,8 +11,8 @@ import Sidebar from "../components/Sidebar";
 import { useAxios } from "../hooks";
 import { API_URL } from "../constants";
 import { useNavigate } from "react-router-dom";
-import vector from '../assets/vector.png';
-import vector1 from '../assets/vector1.png';
+import vector from '../assets/Vector.png';
+import vector1 from '../assets/Vector1.png';
 
 const LifeLineMeetings = () => {
   const navigate = useNavigate();
